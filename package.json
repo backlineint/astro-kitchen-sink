@@ -11,17 +11,20 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/lit": "^1.0.1",
+    "@astrojs/preact": "^1.2.0",
+    "@astrojs/react": "^1.2.1",
+    "@astrojs/solid-js": "^1.2.1",
+    "@astrojs/svelte": "^1.0.2",
+    "@astrojs/vue": "^1.2.0",
+    "@webcomponents/template-shadowroot": "^0.1.0",
     "astro": "^1.5.1",
+    "lit": "^2.4.0",
     "preact": "^10.7.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "solid-js": "^1.4.3",
     "svelte": "^3.48.0",
-    "vue": "^3.2.37",
-    "@astrojs/preact": "^1.2.0",
-    "@astrojs/react": "^1.2.1",
-    "@astrojs/solid-js": "^1.2.1",
-    "@astrojs/svelte": "^1.0.2",
-    "@astrojs/vue": "^1.2.0"
+    "vue": "^3.2.37"
   }
 }
