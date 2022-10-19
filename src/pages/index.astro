@@ -1,6 +1,7 @@
 ---
 // Style Imports
 import "../styles/global.css";
+import "@gdwc/components/dist/style.css";
 
 // Component Imports
 // For JSX components, all the common ways of exporting (under a namespace, specific export, default export etc) are supported!
@@ -11,6 +12,8 @@ import SolidCounter from "../components/SolidCounter";
 import VueCounter from "../components/VueCounter.vue";
 import SvelteCounter from "../components/SvelteCounter.svelte";
 import { LitCounter } from "../components/lit-counter";
+
+import "@gdwc/components/container";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -25,6 +28,8 @@ import { LitCounter } from "../components/lit-counter";
   </head>
   <body>
     <main>
+      <h1>Astro and an IRRESPONSIBLE Amount of JavaScript Frameworks...</h1>
+
       <react.Counter client:visible>
         <h1>Hello from React!</h1>
       </react.Counter>
@@ -48,6 +53,13 @@ import { LitCounter } from "../components/lit-counter";
       <LitCounter client:visible>
         <h1>Hello from (Server Rendered) Custom Elements!</h1>
       </LitCounter>
+
+      <gdwc-container>
+        <p>
+          And for fun, this is component imported from the Generic Drupal Web
+          Components Library.
+        </p>
+      </gdwc-container>
     </main>
   </body>
 </html>

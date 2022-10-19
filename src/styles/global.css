@@ -1,21 +1,31 @@
 html,
 body {
-	font-family: system-ui;
-	margin: 0;
+  font-family: system-ui;
+  margin: 0;
 }
 
 body {
-	padding: 2rem;
+  padding: 2rem;
+}
+
+gdwc-container {
+  --gdwc-padding: 1rem 4rem;
+  background: var(--gradient-4);
+  margin-top: 2em;
+  font-size: 2em;
+  width: 70%;
+  margin: 2em auto;
 }
 
 .counter {
-	display: grid;
-	font-size: 2em;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	margin-top: 2em;
-	place-items: center;
+  display: grid;
+  font-size: 2em;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2em;
+  place-items: center;
 }
 
+main h1,
 .counter-message {
-	text-align: center;
+  text-align: center;
 }
